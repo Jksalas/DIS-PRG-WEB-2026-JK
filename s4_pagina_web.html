@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda 3-AtlonCR</title>
+
+    <!-- FontAwesome: Biblioteca de iconos vectoriales escalables que pueden insertarse  en páginas web, aplicaciones móviles y proyectos de interfaz de usuario. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Tienda 3-AtlonCR</h1>
+      <!-- Encabezado de nivel 1 -->
+      <p>
+        Compre aqui todo lo que necesita para su práctica deportiva.
+      </p>
+      <!--Parráfo: Breve introducción de la página -->
+            <img src="assets\img\triatlon-dibujo.jpg" alt="" />
+      <!-- alt="": Elemento es decorativo (no aporta información)-->
+
+    </header>
+
+    <main>
+
+          <!-- Barra de navegación (navigation bar o navbar): Sección que contiene enlaces para desplazarse entre las distintas páginas o secciones de un sitio. 
+      Sintaxis: 
+        <nav>: define una sección de navegación.
+        <a>: crea enlaces a otras páginas o secciones.
+        href: especifica el destino del enlace. 
+        aria-current="page": indica que es la página actual.
+      -->
+      <nav>
+        <a href="/" aria-current="page">Inicio</a>
+        <a href="#ciclismo">Ciclismo</a>
+        <a href="#atletismo">Atletismo</a>
+        <a href="#natacion">Natación</a>
+      </nav>
+
+    <table>
+        <caption>
+          Descuentos!!.
+        </caption>
+        <tr>
+          <th>Deporte</th>
+          <th>Descuento</th>
+        </tr>
+
+        <tr>
+          <td>Ciclismo</td>
+          <td>25%</td>
+        </tr>
+
+        <tr>
+          <td>Atletismo</td>
+          <td>30%</td>
+        </tr>
+
+        <tr>
+          <td>Natación</td>
+          <td>20%</td>
+        </tr>
+      </table>
+
+
+      <!-- Información principal de la página -->
+      <h2>Lista de Productos</h2>
+
+
+      <h3 id="ciclismo">Ciclismo</h3>
+      <i class="fas fa-bicycle" aria-hidden="true"></i>        
+      <p>Ofrecemos una amplia variedad de:<br> Bicicletas, accesorios y ropa de todos los niveles.</p>
+      <ol>
+        <!-- Lista ordenada -->
+        <li>Bicicletas de crono</li>
+            <ul>
+                <li>Cervelo</li>
+                <li>BMC</li>
+                <li>Giant</li>
+            </ul>
+
+        <li>Accesorios</li>
+            <ul>
+                <li>Manilares</li>
+                <li>Porta Anforas</li>
+                <li>Cascos</li>
+            </ul>
+        <li>Ropa</li>
+      </ol>
+      <hr>
+      <h3 id="atletismo">Atletismo</h3>
+      <i class="fas fa-running" aria-hidden="true"></i>
+        <p>Contamos con las siguientes marcas de tenis.</p>
+      <ol>
+        <li>Nike</li>
+        <li>Adidas</li>
+        <li>Asics</li> 
+      </ol>
+      <hr>
+      <h3 id="natacion">Natación</h3>
+      <i class="fas fa-swimmer" aria-hidden="true"></i>
+        <p>Tenemos gorros y gafas de natación.</p>
+        <ol>
+            <li>Gorros</li>
+                <ul>
+                    <li>Speedo</li>
+                    <li>TYR</li>
+                </ul>
+            <li>Gafas</li>
+                <ul>
+                    <li>Speedo</li>
+                    <li>TYR</li>
+                </ul>
+        </ol>
+
+      <img
+        src="assets\img\triatlon2.jpg"
+        alt="Te acompañamos en tu entrenamiento con productos de calidad."
+        />
+
+
+
+    </main>
+
+    <!-- Pie de página <footer>: Contiene información complementaria, como datos de contacto, derechos de autor, enlaces legales, redes sociales o información del autor. -->
+    <footer>
+      <p> soporte@tienda3atloncr.com &copy; 2026</p>
+    </footer>
+  </body>
+</html>
