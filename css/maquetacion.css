@@ -1,0 +1,31 @@
+/* Comentario  */
+
+/* Selectores: Identifican y delimitan los elementos HTML a los cuales se les aplicarán estilos */
+
+/* */
+
+
+header{
+    background-color: rgb(255, 111, 0)
+}
+
+
+.destacado{
+    color: rgb(0, 255, 17)
+}
+
+.linea-lateral{
+    border-left: 5px solid green;
+    border-radius: 2px;
+}
+
+
+* {
+    font-family: Consolas, monospace;
+}
+
+#articulo-destacado{
+    background-color: rgb(0, 255, 166);
+    padding: 10px;
+    border-radius: 5px;
+}
