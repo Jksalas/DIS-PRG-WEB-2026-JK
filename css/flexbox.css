@@ -1,0 +1,27 @@
+.caja{
+    width: 75px;
+    height: 75px;
+    border: 4px solid #000;
+}
+
+
+#contenedor{
+    border: 2px solid #000;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.verde {
+    background-color: rgb(0, 255, 17);
+}
+
+.azul {
+    background-color: rgb(0, 255, 255);
+}
+
+.rosado {
+    background-color: rgb(255, 0, 255);
+}
