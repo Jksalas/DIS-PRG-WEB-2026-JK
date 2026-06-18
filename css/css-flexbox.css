@@ -1,0 +1,173 @@
+/*
+  Estilos globales del `body`
+  - `font-family`: conjunto de fuentes de sistema y alternativas.
+  - `background-color`: color de fondo de la página.
+  - `margin:0`: elimina márgenes por defecto del body.
+*/
+body {
+	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	background-color: #f5f7fc;
+	margin: 0;
+	color: #111;
+}
+
+
+/*
+  Navbar
+  - Barra principal de navegación: se usa flexbox para alineación horizontal y responsiva.
+*/
+
+.navbar {
+	/* color de fondo de la barra */
+	background-color: #1e2a3e;
+	/* color del texto e iconos dentro de la barra */
+	color: #ffffff;
+	/* layout flexible para distribuir logo, links y avatar */
+	display: flex;
+	align-items: center; /* centra verticalmente los elementos */
+	justify-content: space-between; /* separa logo / links / user */
+	flex-wrap: wrap; /* permite que los elementos se envuelvan en pantallas pequeñas */
+	padding: 0.75rem 1rem; /* espacio interior */
+}
+
+/* Lista de enlaces dentro de la barra */
+.navbar .nav-links {
+	display: flex; /* fila horizontal */
+	gap: 1rem; /* espacio entre items */
+	list-style: none; /* quita viñetas */
+	margin: 0;
+	padding: 0;
+	align-items: center; /* centra verticalmente los enlaces */
+}
+
+/* Enlaces, logo e icono de usuario usan color blanco y sin subrayado por defecto */
+.navbar a,
+.navbar .logo,
+.navbar .user-icon {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Mejora accesibilidad: subrayado en hover y focus para indicar interacción */
+.navbar a:focus,
+.navbar a:hover {
+	text-decoration: underline;
+}
+
+
+/*
+  Main (centrado)
+  - Centra el contenido principal (tarjeta) tanto horizontal como verticalmente.
+*/
+main#main-content {
+	display: flex;
+	justify-content: center; /* centra horizontalmente */
+	align-items: center; /* centra verticalmente */
+	padding: 12px; /* espacio alrededor del contenido */
+}
+
+
+/*
+  Profile card
+  - Contenedor principal de la tarjeta: fondo blanco, esquinas redondeadas y ancho máximo.
+*/
+.profile-card {
+	background-color: #ffffff; /* fondo de la tarjeta */
+	border-radius: 20px; /* esquinas redondeadas */
+	max-width: 450px; /* no crece más allá de este ancho */
+	width: 100%; /* ocupa 100% del contenedor padre hasta el max-width */
+	display: flex;
+	flex-direction: column; /* elementos apilados verticalmente */
+	align-items: center; /* centra elementos internamente */
+	text-align: center; /* centra texto */
+	padding: 1.25rem; /* separación interna */
+}
+
+
+/*
+  Avatar: imagen circular con borde azul
+  - `width` / `height`: tamaño fijo para mantener el círculo.
+  - `border-radius:50%` crea la forma circular.
+  - `object-fit:cover` recorta la imagen para llenar el círculo sin deformarla.
+*/
+.avatar {
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 6px solid #1e2a3e; /* anillo azul alrededor del avatar */
+	margin-bottom: 0.75rem; /* separa la imagen del nombre */
+	background-color: #ffffff; /* fondo por si la imagen tiene transparencias */
+}
+
+
+/*
+  Buttons
+  - `.button-group`: contenedor con separación entre botones.
+  - `.btn`: estilo base para todos los botones (tamaño, padding, rounding).
+  - `.btn.primary` / `.btn.secondary`: variantes de color.
+*/
+.button-group { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+.btn {
+	display: inline-flex; /* alinea icono + texto */
+	align-items: center;
+	gap: 0.5rem; /* espacio entre icono y texto */
+	padding: 0.5rem 0.75rem; /* tamaño clicable */
+	border-radius: 8px;
+	border: none; /* sin borde por defecto */
+	cursor: pointer; /* puntero al pasar */
+	font-weight: 600;
+	background: transparent; /* base transparente, las variantes la sobrescriben */
+	color: inherit; /* hereda color del contenedor */
+}
+/* Focus visible para accesibilidad: resalta el botón cuando recibe foco por teclado */
+.btn:focus { outline: 3px solid rgba(30,42,62,0.12); outline-offset: 2px; }
+.btn.primary { background-color: #1e90ff; color: #ffffff; }
+.btn.secondary { background-color: #f0f0f0; color: #1e2a3e; }
+
+
+/*
+  Stats: mostrar datos en una sola línea
+  - `.stats` usa flexbox para alinear los tres bloques (número encima de etiqueta).
+*/
+.stats {
+	display: flex; /* fila con los tres bloques */
+	gap: 1rem; /* espacio entre columnas */
+	justify-content: center; /* centra el grupo en la tarjeta */
+	align-items: center;
+	width: 100%;
+	margin-top: 0.75rem; /* separación respecto a botones */
+}
+.stats > div { flex: 0 0 auto; }
+
+
+/*
+  Stat item: número encima de etiqueta
+  - `.stat-item` apila verticalmente número y etiqueta y los centra.
+*/
+.stat-item {
+	display: flex;
+	flex-direction: column; /* número arriba, etiqueta abajo */
+	align-items: center;
+}
+.stat-number {
+	font-size: 1.25rem; /* número más destacado */
+	line-height: 1;
+}
+.stat-label {
+	font-size: 0.9rem; /* etiqueta más pequeña */
+	color: #555; /* tono gris para menor jerarquía */
+	margin-top: 0.25rem; /* separa número y etiqueta */
+}
+
+.stat-number {
+	font-size: 1.25rem;
+	line-height: 1;
+}
+.stat-label {
+	font-size: 0.9rem;
+	color: #555;
+	margin-top: 0.25rem;
+}
+
+

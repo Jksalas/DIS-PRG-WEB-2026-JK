@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tienda de artículos deportivos para triatlon" />
+  <meta name="author" content="Joao Salas" />
+
+  <!-- FontAwesome: Biblioteca de iconos vectoriales escalables que pueden insertarse en páginas web, aplicaciones móviles y proyectos de interfaz de usuario. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <title>Tienda 3AtlonCR</title>
+
+</head>
+
+<body>
+  <!-- Header principal -->
+  <header id="inicio">
+    <!-- Encabezado de nivel 1 -->
+    <h1>Tienda 3AtlonCR</h1>
+    <!--Parráfo: Breve introducción de la página -->
+    <p>
+      Compre aqui todo lo que necesita para su práctica deportiva. Tambien ofrecemos servicio de entrenador.
+    </p>
+  </header>
+
+  <!-- Barra de navegación -->
+  <nav>
+    <!--enlaces internos pagina actual -->
+    <a href="#inicio" aria-current="page">Inicio</a>
+    <a href="#ciclismo"><i class="fas fa-bicycle" aria-hidden="true"></i>Ciclismo</a>
+    <a href="#atletismo"><i class="fas fa-running" aria-hidden="true"></i>Atletismo</a>
+    <a href="#natacion"><i class="fas fa-swimmer" aria-hidden="true"></i>Natación</a>
+    <!-- enlace externo a pagina web personal -->
+    <a href="../html/enlace_otra_pagina_web.html" target="_blank">Entrenador</a>
+    <!-- enlace externo a pagina web externa -->
+    <a href="https://www.triathlon.org/" target="_blank">World Triathlon</a>
+  </nav>
+
+
+  <!-- Contenido principal -->
+  <main>
+
+    <img src="../assets/img/triatlon-dibujo.jpg" alt="Imagen de las 3 disciplinas deportivas que ofrece la tienda" />
+    <h2>Promociones</h2>
+    <p>
+      Aproveche nuestros descuentos para el mes de junio!!
+    </p>
+
+    <!-- Tabla 4 columnas y 5 filas , sin contar encabezado-->
+    <!-- Con thead y tbody-->
+    <table>
+      <thead>
+        <tr>
+          <th>Deporte</th>
+          <th>Producto</th>
+          <th>Descuento</th>
+          <th>Cantidad minima de compra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ciclismo</td>
+          <td>Cascos</td>
+          <td>25%</td>
+          <td>CRC 50000 o $100</td>
+        </tr>
+
+        <tr>
+          <td>Ciclismo</td>
+          <td>Manillares</td>
+          <td>25%</td>
+          <td>CRC 50000 o $100</td>
+        </tr>
+
+        <tr>
+          <td>Ciclismo</td>
+          <td>Zapatos</td>
+          <td>30%</td>
+          <td>CRC 50000 o $100</td>
+        </tr>
+
+        <tr>
+          <td>Natación</td>
+          <td>Gorros</td>
+          <td>30%</td>
+          <td>CRC 1000 o $20</td>
+        </tr>
+
+        <tr>
+          <td>Natación</td>
+          <td>Lentes</td>
+          <td>20%</td>
+          <td>CRC 10000 o $20</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <!-- Información principal de la página -->
+    <hr>
+    <h2>Lista de Productos</h2>
+
+
+    <section>
+      <h3 id="ciclismo"><i class="fas fa-bicycle" aria-hidden="true"></i>Ciclismo</h3>
+
+      <p>Ofrecemos una amplia variedad de productos:<br> Bicicletas, componentes, indumentaria.</p>
+      <img width="300" src="../assets/img/bici1.jpg" alt="Imagen de bicicleta de triatlon" />
+      <ol>
+        <!-- Lista ordenada -->
+        <li>Bicicletas de contrarreloj</li>
+        <ul>
+          <li>Cervelo</li>
+          <li>BMC</li>
+          <li>Giant</li>
+        </ul>
+        <li>Aros</li>
+        <ul>
+          <li>Vision</li>
+          <li>Profile Design</li>
+        </ul>
+        <li>Componentes</li>
+        <ul>
+          <li>Manillares</li>
+          <li>Porta Anforas</li>
+          <li>Asientos</li>
+        </ul>
+        <li>Indumentaria</li>
+        <ul>
+          <li>Cascos</li>
+          <li>Jerseys</li>
+          <li>Licras</li>
+          <li>Trajes o enterizos</li>
+        </ul>
+      </ol>
+      <hr>
+    </section>
+
+
+    <section>
+      <h3 id="atletismo"><i class="fas fa-running" aria-hidden="true"></i>Atletismo</h3>
+      <p>Contamos con las siguientes marcas de tenis.</p>
+      <img width="300" src="../assets/img/tenis.jpg" alt="Imagen de tenis de maraton" />
+      <ol>
+        <li>Asics</li>
+        <li>Adidas</li>
+        <li>Nike</li>
+        <li>New Balance</li>
+        <li>Hoka</li>
+      </ol>
+      <hr>
+    </section>
+
+    <section>
+      <h3 id="natacion"><i class="fas fa-swimmer" aria-hidden="true"></i>Natación</h3>
+      <p>Ofrecemos gorros, tapones para oidos y gafas de natación.</p>
+      <img width="300" src="../assets/img/natacion1.jpg" alt="Imagen de persona nadando" />
+      <ol>
+        <li>Gorros</li>
+        <ul>
+          <li>Everlast</li>
+          <li>Speedo</li>
+          <li>TYR</li>
+        </ul>
+        <li>Tapones para oídos</li>
+        <ul>
+          <li>TYR</li>
+        </ul>
+        <li>Gafas</li>
+        <ul>
+          <li>Speedo</li>
+          <li>TYR</li>
+        </ul>
+      </ol>
+      <hr>
+    </section>
+
+    <video controls width="300">
+      <source src="../assets/video/tri2.mp4" type="video/mp4" />
+      <track srclang="en" label="English" default />
+    </video>
+    <hr>
+
+  </main>
+
+
+  <!-- Pie de página: Contiene información complementaria -->
+  <footer>
+    <div>
+      <section>
+        <h2><i class="fas fa-address-card"></i> Contacto</h2>
+        <address>
+          <p>Tienda 3AtlonCR</p>
+          <p>300m Sur Municipalidad de Grecia</p>
+          <p>Grecia, Costa Rica</p>
+          <p>
+            Email:
+            <a href="mailto:info@3atloncr.com">info@3atloncr.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone"></i> Teléfono:
+            <a href="tel:+50624943333">2494-3333</a>
+          </p>
+          <img src="../assets/img/triatlon2.jpg" alt="Imagen de la tienda de triatlon" />
+          <p>&copy; 2026 Joao Salas</p>
+        </address>
+      </section>
+    </div>
+  </footer>
+
+</body>
+
+</html>
