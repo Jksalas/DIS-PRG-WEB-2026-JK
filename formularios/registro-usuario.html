@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="../css/registro-usuario.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Registro de usuario</h1>
+            <p>Complete todos los campos obligatorios para crear su cuenta.</p>
+        </header>
+
+        <form action="">
+            <div>
+                <label for="identificacion">Identificación</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="text" id="identificacion" name="identificacion" placeholder="Ej. 12345678" required aria-required="true" aria-describedby="ayuda-identificacion">
+                    <span id="ayuda-identificacion">Ingrese su número de identificación.</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="nombre-completo">Nombre completo</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="text" id="nombre-completo" name="nombre-completo" placeholder="Ej. María Pérez" required aria-required="true" aria-describedby="ayuda-nombre-completo">
+                    <span id="ayuda-nombre-completo">Ingrese su nombre completo.</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="correo-electronico">Correo electrónico</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="email" id="correo-electronico" name="correo-electronico" placeholder="usuario@dominio.com" required aria-required="true" aria-describedby="ayuda-correo-electronico">
+                    <span id="ayuda-correo-electronico">Ingrese un correo electrónico válido.</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 555-1234" required aria-required="true" aria-describedby="ayuda-telefono">
+                    <span id="ayuda-telefono">Ingrese su número de teléfono.</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="fecha-registro">Fecha de registro</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <input type="date" id="fecha-registro" name="fecha-registro" required aria-required="true" aria-describedby="ayuda-fecha-registro">
+                    <span id="ayuda-fecha-registro">Seleccione la fecha de registro.</span>
+                </div>
+            </div>
+
+            <div>
+                <label for="lugares-trabajo">Lugares de Trabajo</label>
+                <span aria-hidden="true">*</span>
+
+                <div>
+                    <textarea id="lugares-trabajo" name="lugares-trabajo" rows="3" placeholder="Escriba los lugares de trabajo" required aria-required="true" aria-describedby="ayuda-lugares-trabajo"></textarea>
+                    <span id="ayuda-lugares-trabajo">Indique los lugares donde trabaja o ha trabajado.</span>
+                </div>
+            </div>
+
+            <button type="submit" formnovalidate>Registrarse</button>
+        </form>
+    </main>
+
+
+
+
+</body>
+
+</html>
